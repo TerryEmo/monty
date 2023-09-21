@@ -8,11 +8,12 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * struct stack_s - Combined links list that represent the pile
+ * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
- * @prev: points to the last element of the pile
- * @next: points to the following element of the pile
- * Description: Two linked list of node structure
+ * @prev: points to the previous element of the stack (or queue)
+ * @next: points to the next element of the stack (or queue)
+ *
+ * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
 typedef struct stack_s
@@ -75,4 +76,3 @@ void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
 #endif
-
